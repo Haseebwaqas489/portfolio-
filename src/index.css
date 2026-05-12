@@ -1,0 +1,248 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  color: orange;
+}
+
+ 
+
+.profile-card {
+  width: 320px;
+  background-color: white;
+  padding: 30px;
+  margin: 40px auto;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+  transition: 0.3s;
+}
+
+.profile-card:hover {
+  transform: translateY(-8px);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  color: #222;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.profile-role {
+  color: #666;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.profile-text {
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+/* BUTTON */
+
+.profile-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+
+  background-color: black;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.profile-btn:hover {
+  background-color: orange;
+}
+
+
+body {
+  background-color: grey;
+  font-family: Arial, sans-serif;
+}
+
+
+.contact-container {
+  padding: 40px;
+  background-color: whitesmoke;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+  color:black;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  width: 300px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+}
+
+.contact-name {
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.contact-link {
+  color: #555;
+  word-break: break-word;
+}
+
+.skills-container {
+  padding: 40px;
+  background-color: whitesmoke;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  width: 220px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+}
+
+.skill-name {
+  margin-bottom: 12px;
+  color: #111;
+}
+
+.skill-level {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background-color: black;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo{
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .navbar{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    background:red;
+  }
+
+  .nav-links{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo{
+    font-size: 22px;
+  }
+
+}
