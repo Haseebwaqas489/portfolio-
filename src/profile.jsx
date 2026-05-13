@@ -4,6 +4,7 @@
 
 function Profile() {
   return (
+    
     <div className="profile-card">
       <img
       className="profile-img"

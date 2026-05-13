@@ -7,23 +7,34 @@ function Skills() {
   ];
 
   return (
-    <div className="skills-container">
+    <div id="skills" className="skills-container">
       <h2 className="skills-heading">Skills</h2>
 
       <div className="skills-box">
-        {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>
-            <h3 className="skill-name">
-              {skill.name}
-            </h3>
+        {skills.map((skill, index) => {
 
-            <p className="skill-level">
-              {skill.level === "Advanced" && "✅ Advanced"}
-              {skill.level === "Beginner" && "📘 Beginner"}
-              {skill.level === "Intermediate" && "⚡ Intermediate"}
-            </p>
-          </div>
-        ))}
+          let levelText;
+
+          if (skill.level === "Advanced") {
+            levelText = "✅ Advanced";
+          } else if (skill.level === "Intermediate") {
+            levelText = "⚡ Intermediate";
+          } else {
+            levelText = "📘 Beginner";
+          }
+
+          return (
+            <div className="skill-card" key={index}>
+              <h3 className="skill-name">
+                {skill.name}
+              </h3>
+
+              <p className="skill-level">
+                {levelText}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

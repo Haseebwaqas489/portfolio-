@@ -1,6 +1,3 @@
-
-
-
 function ProjectCard({ title, description, techStack, status }) {
   return (
     <div className="card">
@@ -62,7 +59,7 @@ function App() {
   ];
 
   return (
-    <div className="container">
+    <div id="project" className="container">
       <h1>Projects Section</h1>
 
       <div className="projects">
@@ -80,4 +77,4 @@ function App() {
   );
 }
 
-export default  ProjectCard;
+export default App;

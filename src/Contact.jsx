@@ -18,7 +18,7 @@ function Contact() {
   ];
 
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
       <h1 className="contact-heading">Contact</h1>
 
       <div className="contact-box">
@@ -39,7 +39,5 @@ function Contact() {
     </div>
   );
 }
-
-
 
 export default Contact;
