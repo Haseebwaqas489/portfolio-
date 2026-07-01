@@ -1,7 +1,7 @@
 
 
 import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Profile from "./profile";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Card from "./ProjectCard";
